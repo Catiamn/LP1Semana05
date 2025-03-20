@@ -1,4 +1,6 @@
 ﻿using System;
+using Spectre.Console;
+
 
 namespace LevelTwo
 {
@@ -6,7 +8,17 @@ namespace LevelTwo
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("Hello LP1!");
+            if(args.Length == 0)
+            {
+                //makes the default image the "tux.jpg"
+                CanvasImage default_image = new CanvasImage("tux.jpg");
+                //max size
+                default_image.MaxWidth(24);
+                //renders the image
+                AnsiConsole.Write(default_image);
+            }
+
+        
         }
     }
 }

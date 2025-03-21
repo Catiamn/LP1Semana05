@@ -7,7 +7,7 @@ namespace WorkerTable
 {
     public class Program
     {
-        //argumento recebido sera o numero de empregados
+        //argumento recebido sera o numero de empregados na tabela
         private static void Main(string[] args)
         {
             int count = int.Parse(args[0]);

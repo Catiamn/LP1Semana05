@@ -17,7 +17,13 @@ namespace LevelTwo
                 //renders the image
                 AnsiConsole.Write(default_image);
             }
-
+            
+            else 
+            {
+                CanvasImage input_image = new CanvasImage(args[0]);
+                input_image.MaxWidth(int.Parse(args[1]));
+                AnsiConsole.Write(input_image);
+            }
         
         }
     }

@@ -27,7 +27,7 @@ namespace WorkerTable
                 Name name = faker.Name;
                 table.AddRow($"{(i + 1)}", $"{name.FirstName()} {name.LastName()}", name.JobTitle());
             }
-            //escrever a tabela
+            //da print da tabela
             AnsiConsole.Write(table);
         }
     }

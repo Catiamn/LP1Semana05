@@ -16,7 +16,7 @@ namespace WorkerTable
             Faker faker = new Faker("pt_PT"); //gerar dados atraves de faker em portugues
 
             var table = new Table();
-            //tabela com 3 colunas
+            //tabela com 3 colunas para cada elemento
             table.AddColumn("ID");
             table.AddColumn(new TableColumn("Name").LeftAligned());
             table.AddColumn(new TableColumn("Job").LeftAligned());

@@ -13,7 +13,7 @@ namespace WorkerTable
             int count = int.Parse(args[0]);
             Randomizer.Seed = new Random(count); //defir a seed
 
-            Faker faker = new Faker("pt_PT"); //gerar dados atraves de faker
+            Faker faker = new Faker("pt_PT"); //gerar dados atraves de faker em portugues
 
             var table = new Table();
             //tabela com 3 colunas
